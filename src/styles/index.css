@@ -1,12 +1,77 @@
+li :hover >*{
+    visibility: visible;
+  }
+  
+  body {
+    background-color: #f5c6c6;
+  }
+  
+  h1 {
+    font-size: 100px;
+    color: rgba(175, 47, 47, 0.15);
+    text-align: center;
+    font-weight: lighter;
+  }
 
-/* 
-
-    You can write your own styles here...
+  .titulo-personalizado {
+    color: #c08081; 
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  }
+  
+  
+  .todo-container {
+    background-color: #f5c6c6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    box-shadow: none;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    font-size: 24px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f79e9e;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+  ul li:hover {
+    background-color: #c5c5c5;
+  }
+  
+  ul li i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    color: #000000;
+  }
+  
+  ul li:hover i {
+    display: inline;
+  }
+  
+  span {
+    font-size: 14px;
+    color: #777;
+    padding: 10px 20px;
+    display: block;
+  }
